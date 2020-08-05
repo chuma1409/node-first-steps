@@ -6,7 +6,8 @@ const styledMessage = chalk.bgGreen.black(greet('Xola'));
 console.log(styledMessage)
 var figlet = require('figlet');
  
-figlet('Hello, Xola', function(err, data) {
+figlet(greet('Xola'), function(err, data) {
+    "use strict";
     if (err) {
         console.log('Something went wrong...');
         console.dir(err);
